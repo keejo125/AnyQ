@@ -7,7 +7,7 @@ ExternalProject_Add(
     extern_xgboost
     ${EXTERNAL_PROJECT_LOG_ARGS}
     DOWNLOAD_DIR ${XGBOOST_SOURCES_DIR}/src/
-    DOWNLOAD_COMMAND git clone --recursive https://github.com/dmlc/xgboost.git
+    DOWNLOAD_COMMAND git clone --recursive https://github.com/dmlc/xgboost.git && cd xgboost && git checkout v0.81
     DOWNLOAD_NO_PROGRESS  1
     PREFIX          ${XGBOOST_SOURCES_DIR}
     BUILD_COMMAND         ""
